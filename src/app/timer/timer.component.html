@@ -1,0 +1,5 @@
+{{ time | date: 'mm:ss'}}
+<button *ngIf="!timerOn" (click)="startTimer()">Start</button>
+<button *ngIf="timerOn" (click)="stopTimer()">Stop</button>
+<button (click)="waitTimer()">Wait</button>
+<button (click)="resetTimer()">Reset</button>
